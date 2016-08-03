@@ -13,865 +13,81 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
     <!--/* meta tags */-->
+    
+    <script type="text/javascript" src="new-menu/js/granite/jquery.js"></script>
+    <script type="text/javascript" src="new-menu/js/granite/utils.js"></script>
+    <script type="text/javascript" src="new-menu/js/granite/granite.js"></script>
+    <script type="text/javascript" src="new-menu/js/jquery.js"></script>
+    <script type="text/javascript" src="new-menu/js/main.js"></script>
+    <!-- <script type="text/javascript" src="new-menu/js/rum.js"></script> -->
+    <script type="text/javascript" src="new-menu/js/modernizr.js"></script>
+    <!-- <script type="text/javascript" src="new-menu/js/aam.js"></script> -->
+    
+
     <link rel="stylesheet" type="text/css" href="common/css/globals.css">
-    <link rel="stylesheet" type="text/css" href="common/css/gnb.css">
+    <!-- <link rel="stylesheet" type="text/css" href="common/css/gnb.css"> -->
     <link rel="stylesheet" type="text/css" href="common/css/footer.css">
     <link rel="stylesheet" href="entry.css" />
+
+    <link rel="stylesheet" href="new-menu/css/gnb.css">
+    <link rel="stylesheet" href="new-menu/css/global_clientlib.css" type="text/css">
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
     <![endif]-->
   </head>
   <body>
+
+    <script type="text/javascript" src="new-menu/js/checkLogin.js"></script>
+    <!-- 
+    <script type="text/javascript">
+      var utag_data = { 
+        page_channel: 'home', 
+        page_type: 'homepage' 
+      };
+    </script>
+    <script type="text/javascript">
+        window.utag_data = window.utag_data || {};
+        (function(a,b,c,d){
+            a='//tags.tiqcdn.com/utag/samsung/main/prod/utag.js';
+            var hostName = location.hostname;
+            if (hostName.indexOf('devus') != -1 
+          || hostName.indexOf('devwww') != -1
+          || hostName.indexOf('dev') != -1
+          || hostName.indexOf('stgwww') != -1
+          || hostName.indexOf('stgapp') != -1
+          || hostName.indexOf('prod') != -1
+          || hostName.indexOf('local') != -1) {
+                a='//tags.tiqcdn.com/utag/samsung/main/dev/utag.js';
+            } else if(hostName.indexOf('stgweb') != -1) {
+                a='//tags.tiqcdn.com/utag/samsung/main/qa/utag.js';
+            }
+            b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+            a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+        })();
+    </script> -->
+
+
+    <div class="parbase clientcontext">
+      <script type="text/javascript" src="new-menu/js/shared.js"></script>
+      <script type="text/javascript" src="new-menu/js/modern.js"></script>
+      <script type="text/javascript" src="new-menu/js/kernel.js"></script>
+      <!-- <script type="text/javascript">
+        $CQ(function() {
+            CQ_Analytics.SegmentMgr.loadSegments("js\/segmentation");
+            CQ_Analytics.ClientContextUtils.init("\/etc\/clientcontext\/default", "\/content\/samsung\/us");
+
+            
+        });
+      </script> -->
+    </div>
+    
+
     <div class="body-container">
+      <div class="nav-container">
+         
+      </div>
       <div class="">
-
-        <header id="header" role="banner">
-          <div class="gb-gnb">
-            <!--/* GNB Bar */-->
-            <nav class="gb-gnb__bar">
-              <div class="gb-gnb__bar__inner">
-                <!--/* logo */-->
-                <a href="full-funnel-home.html" class="s-svg gb-gnb__logo"><span class="blind">Samsung</span></a>
-
-                <!--/* Drop Menu Toggle Button (for Mobile) */-->
-                <button type="button" class="s-svg s-gnb-toggler"><span class="blind">Open the Menu</span></button>
-                
-                <!--/* main menu (Desktop) */-->
-                <ul class="gb-gnb__bar__main" role="tablist">
-                <li class="s-depth1-wrap" role="tab" aria-selected="false"><button type="button" class="s-btn-toggler js-toggler"><span>Mobile</span></button>
-                    <div class="gb-gnb__drop-desktop">
-                      <div class="gb-gnb__drop-inner">
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <a href="full-funnel-pfs.html" class="s-depth2-link">Mobile<span class="s-svg s-arw-right"></span></a>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Galaxy S7</a></li>
-                            <li><a href="full-funnel-pcd.html" class="s-depth3-link">Smartphones</a></li>
-                            <li><a href="#" class="s-depth3-link">Tablets</a></li>
-                            <li><a href="#" class="s-depth3-link">Windows Tablets</a></li>
-                            <li><a href="#" class="s-depth3-link">Wearables</a></li>
-                            <li><a href="#" class="s-depth3-link">Other Phones</a></li>
-                            <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                      </div>
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Mobile Apps</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Samsung Pay</a></li>
-                            <li><a href="#" class="s-depth3-link">Find My Mobile</a></li>
-                            <li><a href="#" class="s-depth3-link">Galaxy Apps</a></li>
-                            <li><a href="#" class="s-depth3-link">Theme Service</a></li>
-                            <li><a href="#" class="s-depth3-link">Smart Switch</a></li>
-                            <li><a href="#" class="s-depth3-link">SideSync</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        </ul>
-                      </div>
-                    <div class="s-depth2-col">
-                      <ul>
-                        <li class="s-depth2-wrap"><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                      <li class="s-depth2-wrap">
-                        <span class="s-depth2-link">More From Samsung</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                            <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Discover</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
-                      </div>
-                    </div>
-                </li>
-                <li class="s-depth1-wrap" role="tab" aria-selected="false"><button type="button" class="s-btn-toggler js-toggler"><span>TV &amp; AV</span></button>
-                  <div class="gb-gnb__drop-desktop">
-                      <div class="gb-gnb__drop-inner">
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <a href="full-funnel-vdmarketing.html" class="s-depth2-link">TV<span class="s-svg s-arw-right"></span></a>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="product-finder-tv.html" class="s-depth3-link">SUHD TVs</a></li>
-                            <li><a href="#" class="s-depth3-link">UHD TVs</a></li>
-                            <li><a href="#" class="s-depth3-link">Full HD TVs</a></li>
-                            <li><a href="#" class="s-depth3-link">SMART Signage TV</a></li>
-                            <li><a href="#" class="s-depth3-link">SERIF TV</a></li>
-                            <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        </ul>
-                      </div>
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Audio / Video</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Audio &amp; Video</a></li>
-                            <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap"><a href="#" class="s-depth2-link">Smart TV Apps<span class="s-svg s-arw-right"></span></a></li>
-                        <li class="s-depth2-wrap"><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                      </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">More From Samsung</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                            <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Discover</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
-                      </div>
-                    </div>
-                </li>
-                <li class="s-depth1-wrap" role="tab" aria-selected="false"><button type="button" class="s-btn-toggler js-toggler"><span>Appliances</span></button>
-                  <div class="gb-gnb__drop-desktop">
-                    <div class="gb-gnb__drop-inner">
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <a href="#" class="s-depth2-link">Home Appliances<span class="s-svg s-arw-right"></span></a>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Refrigerators</a></li>
-                            <li><a href="#" class="s-depth3-link">Laundry</a></li>
-                            <li><a href="#" class="s-depth3-link">Cooking Appliances</a></li>
-                            <li><a href="#" class="s-depth3-link">Dishwashers</a></li>
-                            <li><a href="#" class="s-depth3-link">Vacuum Cleaners</a></li>
-                            <li><a href="#" class="s-depth3-link">Residential Heating Systems</a></li>
-                            <li><a href="#" class="s-depth3-link">Chef Collection</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <!-- <li class="s-depth2-wrap"><a href="#" class="s-depth2-link">Shop<span class="s-svg s-arw-right"></span></a></li> -->
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap"><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">More From Samsung</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                            <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Discover</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
-                    </div>
-                  </div>
-                </li>
-                <li class="s-depth1-wrap" role="tab" aria-selected="false"><button type="button" class="s-btn-toggler js-toggler"><span>More</span></button>
-                  <div class="gb-gnb__drop-desktop">
-                    <div class="gb-gnb__drop-inner">
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Cameras</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Cameras</a></li>
-                            <li><a href="#" class="s-depth3-link">Lenses</a></li>
-                            <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">IT</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Monitors</a></li>
-                            <li><a href="#" class="s-depth3-link">Printers &amp; Multifunction</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Memory / Storage</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">SSD</a></li>
-                            <li><a href="#" class="s-depth3-link">Memory Cards</a></li>
-                            <li><a href="#" class="s-depth3-link">USB Flash Drivers</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Smart Home</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Kit</a></li>
-                            <li><a href="#" class="s-depth3-link">HUB</a></li>
-                            <li><a href="#" class="s-depth3-link">Sensor &amp; Plug</a></li>
-                            <li><a href="#" class="s-depth3-link">About SmartThings</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap"><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">More From Samsung</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                            <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Discover</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
-                    </div>
-                  </div>
-                </li>
-                <li class="s-depth1-wrap" role="tab" aria-selected="false"><button type="button" class="s-btn-toggler js-toggler"><span>Support</span></button>
-                  <div class="gb-gnb__drop-desktop">
-                    <div class="gb-gnb__drop-inner">
-                      <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap"><a href="#" class="s-depth2-link">Support Home<span class="s-svg s-arw-right"></span></a></li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Mobile Devices</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Smartphone</a></li>
-                            <li><a href="#" class="s-depth3-link">Tablet</a></li>
-                            <li><a href="#" class="s-depth3-link">Galaxy Camera</a></li>
-                            <li><a href="#" class="s-depth3-link">Wearables</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">TV / Audio / Video</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Television</a></li>
-                            <li><a href="#" class="s-depth3-link">Blu-ray</a></li>
-                            <li><a href="#" class="s-depth3-link">Home Cinema</a></li>
-                            <li><a href="#" class="s-depth3-link">DVD</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">IT</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Notebook / PC</a></li>
-                            <li><a href="#" class="s-depth3-link">Printer</a></li>
-                            <li><a href="#" class="s-depth3-link">PC Monitor</a></li>
-                            <li><a href="#" class="s-depth3-link">Fax</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Camera / Camcorder</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Camcorder</a></li>
-                            <li><a href="#" class="s-depth3-link">Camera</a></li>
-                            <li><a href="#" class="s-depth3-link">Lens</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Home Appliances</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Refrigerator</a></li>
-                            <li><a href="#" class="s-depth3-link">Laundry</a></li>
-                            <li><a href="#" class="s-depth3-link">Cooking</a></li>
-                            <li><a href="#" class="s-depth3-link">Vacuum</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Memory / Storage</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">Memory Card</a></li>
-                            <li><a href="#" class="s-depth3-link">Solid State Drive</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">Additional Support</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">News &amp; Alerts</a></li>
-                            <li><a href="#" class="s-depth3-link">Service Locations</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Warranty Information</a></li>
-                            <li><a href="#" class="s-depth3-link">Product Registration</a></li>
-                            <li><a href="#" class="s-depth3-link">Repair Tracking</a></li>
-                            <li><a href="#" class="s-depth3-link">Online Shop Enquiries</a></li>
-                            <li><a href="#" class="s-depth3-link">SmartThings Support</a></li>
-                            <li><a href="#" class="s-depth3-link">Contact Us</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <div class="s-depth2-col">
-                        <ul>
-                        <li class="s-depth2-wrap"><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                        <li class="s-depth2-wrap">
-                          <span class="s-depth2-link">More From Samsung</span>
-                          <div class="s-depth3-wrap">
-                            <ul>
-                            <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                            <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                            <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                            <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                            <li><a href="#" class="s-depth3-link">Discover</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                          </ul>
-                        </div>
-                        <button type="button" title="Close Menu" class="s-svg s-ico-close"><span class="blind">Close Menu</span></button>
-                    </div>
-                  </div>
-                </li>
-                </ul>
-                  
-                <!--/* GNB Mobile Menu */-->
-                <div class="gb-gnb__drop-mobile drilldown">
-                  <div class="gb-gnb__drop-mobile__wrap drilldown-container">
-                      <nav class="drilldown-root">
-                      <ul>
-                      <li>
-                        <a href="javascript:;" class="s-depth1-link">Mobile<span class="s-svg s-arw-right"></span></a>
-                        <div class="drilldown-sub">
-                          <div class="drilldown-back">
-                            <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span>
-                            </a>
-                          </div>
-                          <ul>
-                          <li>
-                              <a href="#" class="s-depth2-link">Mobile<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="full-funnel-pfs.html" class="s-depth3-link s-pfs-link">Mobile</a></li>
-                                <li><a href="#" class="s-depth3-link">Galaxy S7</a></li>
-                                <li><a href="full-funnel-pcd.html" class="s-depth3-link">Smartphones</a></li>
-                                <li><a href="#" class="s-depth3-link">Tablets</a></li>
-                                <li><a href="#" class="s-depth3-link">Windows Tablets</a></li>
-                                <li><a href="#" class="s-depth3-link">Wearables</a></li>
-                                <li><a href="#" class="s-depth3-link">Other Phones</a></li>
-                                <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                              </ul>
-                            </div>
-                            </li>
-                            <li>
-                              <a href="#" class="s-depth2-link">Mobile Apps<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Samsung Pay</a></li>
-                              <li><a href="#" class="s-depth3-link">Find My Mobile</a></li>
-                                <li><a href="#" class="s-depth3-link">Galaxy Apps</a></li>
-                                <li><a href="#" class="s-depth3-link">Theme Service</a></li>
-                                <li><a href="#" class="s-depth3-link">Smart Switch</a></li>
-                                <li><a href="#" class="s-depth3-link">SideSync</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <!-- <li><a href="#" class="s-depth2-link">Shop<span class="s-svg s-arw-right"></span></a></li> -->
-                          <li><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                          <li>
-                            <a href="#" class="s-depth2-link">More From Samsung<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                                <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                                <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                                <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                                <li><a href="#" class="s-depth3-link">Discover</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="s-depth1-link">TV &amp; AV<span class="s-svg s-arw-right"></span></a>
-                        <div class="drilldown-sub">
-                          <div class="drilldown-back">
-                            <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                          </div>
-                          <ul>
-                            <li>
-                              <a href="full-funnel-vdmarketing.html" class="s-depth2-link">TV<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                                <li><a href="full-funnel-vdmarketing.html" class="s-depth3-link s-pfs-link">TV</a></li>
-                                <li><a href="product-finder-tv.html" class="s-depth3-link">SUHD TVs</a></li>
-                                <li><a href="#" class="s-depth3-link">UHD TVs</a></li>
-                                <li><a href="#" class="s-depth3-link">Full HD TVs</a></li>
-                                <li><a href="#" class="s-depth3-link">SMART Signage TV</a></li>
-                                <li><a href="#" class="s-depth3-link">SERIF TV</a></li>
-                                <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                              </ul>
-                            </div>
-                            </li>
-                            <li>
-                              <a href="#" class="s-depth2-link">Audio / Video<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                                <div class="drilldown-back">
-                                  <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                                </div>
-                                <ul>
-                                <li><a href="#" class="s-depth3-link">Audio &amp; Video</a></li>
-                                  <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                                </ul>
-                              </div>
-                              </li>
-                            <li><a href="#" class="s-depth2-link">Smart TV Apps<span class="s-svg s-arw-right"></span></a></li>
-                            <!-- <li><a href="#" class="s-depth2-link">Shop<span class="s-svg s-arw-right"></span></a></li> -->
-                            <li><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                            <li>
-                              <a href="#" class="s-depth2-link">More From Samsung<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                                <div class="drilldown-back">
-                                  <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                                </div>
-                                <ul>
-                                  <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                                  <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                                  <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                                  <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                                  <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                                  <li><a href="#" class="s-depth3-link">Discover</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="s-depth1-link">Appliances<span class="s-svg s-arw-right"></span></a>
-                        <div class="drilldown-sub">
-                            <div class="drilldown-back">
-                              <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                            </div>
-                          <ul>
-                          <li>
-                            <a href="#" class="s-depth2-link">Home Appliances<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link s-pfs-link">Home Appliances</a></li>
-                              <li><a href="#" class="s-depth3-link">Refrigerators</a></li>
-                              <li><a href="#" class="s-depth3-link">Laundry</a></li>
-                              <li><a href="#" class="s-depth3-link">Cooking Appliances</a></li>
-                              <li><a href="#" class="s-depth3-link">Dishwashers</a></li>
-                              <li><a href="#" class="s-depth3-link">Vacuum Cleaners</a></li>
-                              <li><a href="#" class="s-depth3-link">Residential Heating Systems</a></li>
-                              <li><a href="#" class="s-depth3-link">Chef Collection</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <!-- <li><a href="#" class="s-depth2-link">Shop<span class="s-svg s-arw-right"></span></a></li> -->
-                          <li><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                          <li>
-                            <a href="#" class="s-depth2-link">More From Samsung<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                                <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                                <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                                <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                                <li><a href="#" class="s-depth3-link">Discover</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          </ul>
-                        </div>
-                        </li>
-                        <li>
-                        <a href="javascript:;" class="s-depth1-link">More<span class="s-svg s-arw-right"></span></a>
-                        <div class="drilldown-sub">
-                            <div class="drilldown-back">
-                              <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                            </div>
-                            <ul>
-                            <li>
-                              <a href="#" class="s-depth2-link">Camera<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                                <div class="drilldown-back">
-                                  <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                                </div>
-                                <ul>
-                                <li><a href="#" class="s-depth3-link">Cameras</a></li>
-                                  <li><a href="#" class="s-depth3-link">Lenses</a></li>
-                                  <li><a href="#" class="s-depth3-link">Accessories</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" class="s-depth2-link">IT<span class="s-svg s-arw-right"></span></a>
-                              <div class="drilldown-sub">
-                                <div class="drilldown-back">
-                                  <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                                </div>
-                                <ul>
-                                <li><a href="#" class="s-depth3-link">Monitor</a></li>
-                                  <li><a href="#" class="s-depth3-link">Printer &amp; Multifuction</a></li>
-                                </ul>
-                              </div>
-                            </li>
-                            <li>
-                              <a href="#" class="s-depth2-link">Memory / Storage<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">SSD</a></li>
-                                <li><a href="#" class="s-depth3-link">Memory Cards</a></li>
-                                <li><a href="#" class="s-depth3-link">USB Flash Drivers</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Smart Home<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Kit</a></li>
-                                <li><a href="#" class="s-depth3-link">HUB</a></li>
-                                <li><a href="#" class="s-depth3-link">Sensor &amp; Plug</a></li>
-                                <li><a href="#" class="s-depth3-link">About SmartThings</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <!-- <li><a href="#" class="s-depth2-link">Shop<span class="s-svg s-arw-right"></span></a></li> -->
-                          <li><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                          <li>
-                            <a href="#" class="s-depth2-link">More From Samsung<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                                <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                                <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                                <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                                <li><a href="#" class="s-depth3-link">Discover</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="s-depth1-link">Support<span class="s-svg s-arw-right"></span></a>
-                        <div class="drilldown-sub">
-                          <div class="drilldown-back">
-                            <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                          </div>
-                          <ul>
-                          <li><a href="#" class="s-depth2-link">Support Home<span class="s-svg s-arw-right"></span></a></li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Mobile Devices<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Smartphone</a></li>
-                                <li><a href="#" class="s-depth3-link">Tablet</a></li>
-                                <li><a href="#" class="s-depth3-link">Galaxy Camera</a></li>
-                                <li><a href="#" class="s-depth3-link">Wearables</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">TV / Audio / Video<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Television</a></li>
-                                <li><a href="#" class="s-depth3-link">Blu-ray</a></li>
-                                <li><a href="#" class="s-depth3-link">Home Cinema</a></li>
-                                <li><a href="#" class="s-depth3-link">DVD</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">IT<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Notebook / PC</a></li>
-                              <li><a href="#" class="s-depth3-link">Printer</a></li>
-                              <li><a href="#" class="s-depth3-link">PC Monitor</a></li>
-                              <li><a href="#" class="s-depth3-link">Fax</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Camera &amp; Camcorder<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Camcorder</a></li>
-                              <li><a href="#" class="s-depth3-link">Camera</a></li>
-                              <li><a href="#" class="s-depth3-link">Lens</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Home Appliances<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Refrigerator</a></li>
-                              <li><a href="#" class="s-depth3-link">Laundry</a></li>
-                              <li><a href="#" class="s-depth3-link">Cooking</a></li>
-                              <li><a href="#" class="s-depth3-link">Vacuum</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Memory / Storage<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">Memory Card</a></li>
-                              <li><a href="#" class="s-depth3-link">Solid State Drive</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <a href="#" class="s-depth2-link">Additional Support<span class="s-svg s-arw-right"></span></a>
-                            <div class="s-depth3-wrap drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                              <li><a href="#" class="s-depth3-link">News &amp; Alerts</a></li>
-                              <li><a href="#" class="s-depth3-link">Service Locations</a></li>
-                              <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                              <li><a href="#" class="s-depth3-link">Warranty Information</a></li>
-                              <li><a href="#" class="s-depth3-link">Product Registration</a></li>
-                              <li><a href="#" class="s-depth3-link">Repair Tracking</a></li>
-                              <li><a href="#" class="s-depth3-link">Online Shop Enquiries</a></li>
-                              <li><a href="#" class="s-depth3-link">SmartThings Support</a></li>
-                              <li><a href="#" class="s-depth3-link">Contact Us</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li><a href="#" target="_blank" class="s-depth2-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                          <li>
-                            <a href="#" class="s-depth2-link">More From Samsung<span class="s-svg s-arw-right"></span></a>
-                            <div class="drilldown-sub">
-                              <div class="drilldown-back">
-                                <a href="javascript:;" class="s-btn-back"><span class="s-svg s-arw-left"></span><span>Back</span></a>
-                              </div>
-                              <ul>
-                                <li><a href="#" class="s-depth3-link">About Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Investor Relations</a></li>
-                                <li><a href="#" class="s-depth3-link">My Samsung</a></li>
-                                <li><a href="#" class="s-depth3-link">Find Offer</a></li>
-                                <li><a href="#" class="s-depth3-link">Store Locator</a></li>
-                                <li><a href="#" class="s-depth3-link">Discover</a></li>
-                              </ul>
-                            </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li><a href="#" target="_blank" class="s-depth1-link">For Business<span class="s-svg s-ico-new-window"><span class="blind"> Open in New Window</span></span></a></li>
-                      <li>
-                        <!--/* logout(default) */-->
-                        <a href="#" class="s-signin">Sign In</a>
-                        <!--/* logined */-->
-                        <!-- <a href="#" class="s-mypage">Sign Out</a> -->
-                      </li>
-                      </ul>
-                      </nav>
-                  </div>
-                </div>
-                <!--/* GNB Mobile Menu end */-->
-
-                <!--/* Drop Menu Close Button (for Mobile) */-->
-                <button type="button" class="s-svg s-ico-close js-mo-close"><span class="blind">Close the Menu</span></button>
-
-                <!--/* utility menu */-->
-                <ul class="gb-gnb__bar__utility">
-                <li class="s-only-pc s-mymenu">
-                  <!--/* logout(default) */-->
-                  <a href="#" title="Sign In" class="s-svg s-ico-login"><span class="blind">Sign In</span></a>
-                </li>
-                <li>
-                  <!--/* cart button (empty) */-->
-                  <button type="button" title="Cart" class="s-svg s-ico-cart-empty"><span class="blind">Cart</span></button>
-                  <!--/* cart button (with products) */-->
-                  <!-- <button type="button" title="Cart" class="s-svg s-ico-cart"><span class="blind">Open Cart Layer</span></button> -->
-                  <!--/* Cart Layer */-->
-                  <div class="gb-gnb__cart">
-                    <div class="gb-gnb__cart-inner">
-                      <div class="gb-gnb__cart-layer">
-                        @Cart Layer
-                      </div>
-                    </div>
-                  </div>
-                  <!--/* Cart Layer end */-->
-                </li>
-                <li>
-                  <!--/* search button */-->
-                  <button type="button" class="s-svg s-ico-search js-ico-search" title="Search"><span class="blind">Open Search Layer</span></button>
-                  <!--/* Search Area */-->
-                  <!--/* [D] When search layer is open, add class 'gb-gnb-search--open' to 'gb-gnb__search' */-->
-                  <div class="gb-gnb__search">
-                    <div class="gb-gnb__search__bar">
-                      <div class="gb-gnb__search__bar-inner">
-                        <div class="gb-gnb__search__input-wrap">
-                          <label for="inp_srch" class="blind">Input Search Keyword</label>
-                            <input type="text" id="inp_srch" name="gnb_search" class="gb-gnb__search__input" placeholder="Galaxy S7">
-                        </div>
-                        <button type="submit" class="s-svg s-ico-search" for="inp_srch"><span class="blind">Search</span></button>
-                      </div>
-                    </div>
-                    <div class="gb-gnb__search__suggest">
-                      <div class="gb-gnb__search__suggest-inner">
-                        <!--/* no keyword match - s-popular + s-recently */-->
-                        <div class="gb-gnb__search__suggest-list s-popular">
-                          <strong class="gb-gnb__search__suggest-title">Popular</strong>
-                          <ul>
-                          <li><a href="#">Galaxy S7<span class="s-svg s-arw-right"></span></a></li>
-                          <li><a href="#">Galaxy Note 5<span class="s-svg s-arw-right"></span></a></li>
-                          <!-- <li><a href="#">Galaxy Edge 5<span class="s-svg s-arw-right"></span></a></li> -->
-                          </ul>
-                        </div>
-                        <div class="gb-gnb__search__suggest-list s-recently">
-                          <strong class="gb-gnb__search__suggest-title">Recent</strong>
-                          <ul>
-                          <li><a href="#">Galaxy S7<span class="s-svg s-arw-right"></span></a></li>
-                          <li><a href="#">Galaxy Note 5<span class="s-svg s-arw-right"></span></a></li>
-                          <!-- <li><a href="#">Galaxy Edge 5<span class="s-svg s-arw-right"></span></a></li> -->
-                          </ul>
-                        </div>
-                        <!--/*  keyword match - s-suggested */-->
-                        <div class="gb-gnb__search__suggest-list s-suggested">
-                          <a href="#" class="gb-gnb__search__suggest-title">Suggested Searches<span class="s-svg s-arw-right"></span></a>
-                          <ul>
-                          <!-- <li><a href="#">SAMSUNG <strong>Galaxy</strong> tab S2 in Products tab S2 in Products tab S2 in Products<span class="s-svg s-arw-right"></span></a></li> -->
-                          <li><a href="#">SAMSUNG <strong>Galaxy</strong> tab S2 in Products<span class="s-svg s-arw-right"></span></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <!--/* When search layer is closed, the value should reset */-->
-                    <div class="gb-gnb__search__close">
-                      <div class="gb-gnb__search__close-inner">
-                        <button type="button" class="s-svg s-ico-close">
-                            <span class="blind">Search Layer Close</span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>  
-                  <!--/* Search Area End */-->
-                </li>
-                </ul>
-              </div>
-            </nav>
-            <!--/* GNB Bar end */-->
-          </div>
-        </header>
 
         <div class="location-area pc_view">
           <img class="image-funnel-fpo" src="img/img_location5.jpg" />
@@ -991,31 +207,23 @@
         <div id="dimContainer"><div class="lightbox-skrim" style="display : none;"></div></div>
       </div>
     </div>
-    <script src="entry.js"></script>
-    <!--/* js-common */-->
-    <script src="common/js/main1.smg.aem.vendor.min.js"></script>
-    <script src="common/js/main2.smg.aem.global.min.js"></script>
-    <!--/* //js-common */-->
+    
+    <script type="text/javascript" src="new-menu/js/js-cookies.js"></script>
+    <script type="text/javascript" src="new-menu/js/global_bottom_clientlib.js"></script>
+    <script type="text/javascript" src="new-menu/js/queryComplete.js"></script>
+    <script type="text/javascript" src="new-menu/js/common.js"></script>
+    <script type="text/javascript" src="new-menu/js/sso.js"></script>
+    <script type="text/javascript" src="new-menu/js/digital-river.js"></script>
+    
+    <!--<script type="text/javascript" src="new-menu/js/gnb_clientlib.js"></script>-->
 
-    <script src="gnb/js/placeholders.jquery.min.js"></script>
-    <script src="gnb/js/jquery.drilldown.smg.js"></script>
-    <script src="gnb/js/common-gnb.js"></script>
-    <script src="footer/js/common-footer.js"></script>
-
-    <!--/* 마크업 확인용 임시 js */-->
-    <script type="text/javascript">
-
-      $(".gb-gnb__search__input").keydown(function(e){
-
-        var keyCode = e.keyCode || e.which;
-        if(keyCode === 9) return;
-
-        $(".gb-gnb__search__suggest").show();
-      })
-
-      $('.tvm-btn-area .tvm2,.tvm-btn-area .tvm3').click(function(e){
-        e.preventDefault();
-      });
+    <script> 
+        $(function(){
+          $(".nav-container").load("html-snippets/navigation.html", function() {
+            console.info("Loaded");
+            $.getScript("new-menu/js/gnb_clientlib.js");
+          }); 
+        });
     </script>
   </body>
 

@@ -1,0 +1,1 @@
+function isLogin(){function n(n){for(var r=n+"=",t=document.cookie.split(";"),e=0;e<t.length;e++){for(var i=t[e];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(r))return i.substring(r.length,i.length)}return""}var r=n("remoteId"),t=n("iPlanetDirectoryProOptVal");return null!=r&&""!=r?!0:null!=t&&""!=t?!0:!1}

@@ -2697,7 +2697,7 @@ body.nav-expanded {
 
 .body-container {
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch; }
   @media (min-width: 769px) {
     .body-container {
@@ -6867,7 +6867,7 @@ p,
 
 
 a:active,a:visited,a:focus,button:active,button:visited,button:focus{outline:none}
-.body-container{overflow:hidden;position:relative}
+.body-container{overflow-x:hidden;position:relative}
 .bg_fly{position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1}
 .bg_fly:before{position:absolute;top:17.86%;left:-50%;width:100%;height:17.4%;background:url(img/bg_fly.jpg) repeat-x;content:''}
 .bg_fly:after{position:absolute;top:17.86%;right:-50%;width:100%;height:17.4%;background:url(img/bg_fly.jpg) repeat-x;content:''}

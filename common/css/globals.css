@@ -1032,7 +1032,9 @@ body, textarea, input, select, textarea, button {
 }
 
 @media only screen and (min-width: 767px) {
-  .second-nav-container.active .pc_default {
+  .second-nav-container.active .pc_default,
+  .second-nav-container.active .m_default,
+  .second-nav-container.active .m_open {
     display: none;
   }
 

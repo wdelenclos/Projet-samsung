@@ -1013,3 +1013,30 @@ body, textarea, input, select, textarea, button {
     background-size: 100%;
   }
 }
+
+.second-nav-container:hover {
+  cursor: pointer;
+}
+
+.second-nav-container .pc_open,
+.second-nav-container .m_open {
+    display: none;
+}
+
+.second-nav-container.active .m_default {
+  display: none;
+}
+
+.second-nav-container.active .m_open {
+  display: block;;
+}
+
+@media only screen and (min-width: 767px) {
+  .second-nav-container.active .pc_default {
+    display: none;
+  }
+
+  .second-nav-container.active .pc_open {
+    display: block;
+  }
+}

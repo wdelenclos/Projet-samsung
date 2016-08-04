@@ -152,6 +152,10 @@
   z-index: 9999999;
 }
 
+.gnb-b2c td {
+  vertical-align: baseline;
+}
+
 @media only screen and (min-width: 767px) {
   .gnb-b2c-scol-5 {
     float: left;

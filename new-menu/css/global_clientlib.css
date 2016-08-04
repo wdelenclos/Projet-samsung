@@ -3543,6 +3543,10 @@ time, mark, audio, video, button {
   vertical-align: baseline;
 }
 
+td {
+  vertical-align: middle;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;

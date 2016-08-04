@@ -5320,7 +5320,8 @@ p,
 
 @media (min-width: 769px) {
   .selector {
-    width:1440px;
+    /*width:1440px;*/
+    width: 100%;
     margin:0 auto;
     background: linear-gradient(to right, #f7f7f7 0%, #f7f7f7 50%, #ffffff 50%, #ffffff 100%); } }
 

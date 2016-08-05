@@ -41,6 +41,7 @@
 
 .gb-footer__col4 .gb-footer__item {
   margin-top: 14px;
+  box-sizing: content-box;
 }
 
 .gb-footer__col4 .gb-footer__item:first-child {

@@ -86,11 +86,13 @@
     <div class="body-container">
       <div class="nav-container">
       </div>
+
       <div class="second-nav-container">
-  		<img src="img/second-nav-close-pc.jpg" class="image-funnel-fpo pc_view pc_default">
-  		<img src="img/second-nav-open-pc.jpg" class="image-funnel-fpo pc_view pc_open">
-  		<img src="img/second-nav-close-m.jpg" class="image-funnel-fpo m_view m_default">
-  		<img src="img/second-nav-open-m.jpg" class="image-funnel-fpo m_view m_open">
+    		<img src="img/second-nav-close-pc.jpg" class="image-funnel-fpo pc_view pc_default">
+    		<img src="img/second-nav-open-pc.jpg" class="image-funnel-fpo pc_view pc_open">
+        <img src="img/second-nav-short-m.jpg" class="image-funnel-fpo m_view m_short">
+    		<img src="img/second-nav-close-m.jpg" class="image-funnel-fpo m_view m_default">
+    		<img src="img/second-nav-open-m.jpg" class="image-funnel-fpo m_view m_open">
       </div>
 
         <div class="s-content-inner">
@@ -237,12 +239,19 @@
             $.getScript("new-menu/js/gnb_clientlib.js");
           }); 
 
-          $( ".second-nav-container" ).on( "click", function() {
+          $( ".second-nav-container" ).on( "click", function(e) {
             if($(this).hasClass('active')) {
               window.location.href="shop-listing-page.html"
             }else {
-              $(this).addClass( 'active' );
+              if(!$(event.target).hasClass('m_short')) {
+                $(this).addClass( 'active' );
+              }
             }
+          });
+
+          $(".m_short").on("click",function() {
+            $(this).hide();
+            $('.m_default').show();
           });
         });
     </script> 

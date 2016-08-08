@@ -3556,7 +3556,7 @@ window.AEMapp = {
       if ($('.item-container').is(':empty')) {
         $('.item-container').append('<p class="gnb-empty-cart">Your shopping cart is empty.</p>');
       }
-      $('.gnb-checkout a').text('Go To Shop').attr('href', 'http://samsung.com/us/shop');
+      $('.gnb-checkout a').text('Go To Shop').attr('href', 'shop-landing-page.html');
       _that.showEmpty();
       $.cookie('DR_CART_CONTENT', 0, {path: '/'});  // TODO: change to samsung domain in production.
     }

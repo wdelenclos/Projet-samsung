@@ -1650,6 +1650,15 @@ var gnbNavigation = (function (window, document, $, undefined) {
       }
     });
 
+    $(document).click(function(event) { 
+        if(!$(event.target).closest('.gnb-b2c').length) {
+            console.info('clicked outside menu');
+            closeNav();
+        }else{
+            console.info('clicked on menu');
+        }
+    });
+
     // Mobile Sub Navigation
     $mobileLvl.on('touchstart click', function(e) {
       e.preventDefault();

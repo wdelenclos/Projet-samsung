@@ -1019,12 +1019,13 @@ body, textarea, input, select, textarea, button {
 }
 
 .second-nav-container .pc_open,
-.second-nav-container .m_open {
+.second-nav-container .m_open, 
+.second-nav-container .m_default {
     display: none;
 }
 
 .second-nav-container.active .m_default {
-  display: none;
+  display: none !important;
 }
 
 .second-nav-container.active .m_open {
@@ -1032,9 +1033,14 @@ body, textarea, input, select, textarea, button {
 }
 
 @media only screen and (min-width: 767px) {
+  .m_short {
+    display: none;
+  }
+
   .second-nav-container.active .pc_default,
   .second-nav-container.active .m_default,
-  .second-nav-container.active .m_open {
+  .second-nav-container.active .m_open,
+  .second-nav-container.active .m_short {
     display: none;
   }
 

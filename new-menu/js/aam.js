@@ -1,4 +1,4 @@
-
+/*
 var host = location.hostname;
 if (host.indexOf('devus') != -1 || host.indexOf('devwww') != -1
 || host.indexOf('dev') != -1
@@ -12,3 +12,4 @@ document.write(unescape("%3Cscript src='//tags.tiqcdn.com/utag/samsung/main/qa/u
 } else {
 document.write(unescape("%3Cscript src='//tags.tiqcdn.com/utag/samsung/main/prod/utag.sync.js' type='text/javascript'%3E%3C/script%3E"));
 }
+*/
